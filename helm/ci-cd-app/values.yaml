@@ -1,0 +1,7 @@
+image:
+  repository: leopincle/ci-cd-app
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
