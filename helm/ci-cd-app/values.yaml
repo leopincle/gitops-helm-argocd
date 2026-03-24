@@ -1,6 +1,6 @@
 image:
   repository: leopincle/ci-cd-app
-  tag: 9f6d669901f2dc304f0ac2ab0e216bd5af83f194
+  tag: 1425f1cbb05e88b1436cd124344b44cc6371e440
 
 service:
   type: LoadBalancer
