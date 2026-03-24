@@ -4,7 +4,7 @@ metadata:
   name: ci-cd-app-monitor
   namespace: monitoring
   labels:
-    release: kube-prometheus-stack
+    release: monitoring
 spec:
   selector:
     matchLabels:
