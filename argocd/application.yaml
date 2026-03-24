@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ci-cd-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/leopincle/gitops-helm-argocd
+    targetRevision: main
+    path: helm/ci-cd-app
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
