@@ -1,0 +1,5 @@
+replicaCount: 3
+
+image:
+  repository: leopincle/ci-cd-app
+  tag: "stable"

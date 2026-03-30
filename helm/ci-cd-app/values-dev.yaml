@@ -1,0 +1,8 @@
+replicaCount: 1
+
+image:
+  repository: leopincle/ci-cd-app
+  tag: "latest"
+
+service:
+  type: LoadBalancer
