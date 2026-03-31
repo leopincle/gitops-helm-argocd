@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ci-cd-app-staging
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/leopincle/gitops-helm-argocd.git
+    targetRevision: main
+    path: helm/ci-cd-app
+    helm:
+      valueFiles:
+        - values-staging.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

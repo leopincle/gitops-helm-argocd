@@ -1,5 +1,7 @@
 replicaCount: 3
 
+namespace: prod
+
 image:
   repository: leopincle/ci-cd-app
   tag: "stable"

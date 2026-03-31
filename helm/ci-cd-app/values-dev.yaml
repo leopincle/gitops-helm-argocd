@@ -1,8 +1,8 @@
 replicaCount: 1
 
+namespace: dev
+
 image:
   repository: leopincle/ci-cd-app
   tag: "2a0457e4a1852a236da95e8dc13475fd8f62d9a4"
 
-service:
-  type: LoadBalancer

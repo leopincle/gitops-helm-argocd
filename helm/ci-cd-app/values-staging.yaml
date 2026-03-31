@@ -1,5 +1,7 @@
 replicaCount: 2
 
+namespace: staging
+
 image:
   repository: leopincle/ci-cd-app
   tag: "latest"

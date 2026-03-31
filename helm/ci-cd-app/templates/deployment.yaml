@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ci-cd-app
+  name: {{ .Release.Name}}
+  namespace: {{ .Values.namespace }}
 spec:
   replicas: 1
   selector:

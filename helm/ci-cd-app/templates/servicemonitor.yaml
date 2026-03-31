@@ -1,8 +1,8 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: ci-cd-app-monitor
-  namespace: monitoring
+  name: {{ .Release.Name}}
+  namespace: {{ .Values.namespace }}
   labels:
     release: monitoring
 spec:
