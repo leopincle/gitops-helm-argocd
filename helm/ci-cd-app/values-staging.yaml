@@ -1,6 +1,7 @@
 replicaCount: 2
 
 namespace: staging
+create: true
 
 image:
   repository: leopincle/ci-cd-app

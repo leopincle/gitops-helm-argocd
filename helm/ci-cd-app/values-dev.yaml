@@ -1,6 +1,7 @@
 replicaCount: 1
 
 namespace: dev
+create: true
 
 image:
   repository: leopincle/ci-cd-app
