@@ -5,4 +5,4 @@ create: true
 
 image:
   repository: leopincle/ci-cd-app
-  tag: "latest"
+  tag: "0b089c824d175facb99070e190a3cf52c1923d99"
