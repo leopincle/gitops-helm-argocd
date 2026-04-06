@@ -5,4 +5,4 @@ create: false
 
 image:
   repository: leopincle/ci-cd-app
-  tag: """cd6a8b6b66c226350936cafdac89c1563045212b"""
+  tag: """5bfe72697aeafa28f2e58be46cc8a89fdac392dd"""
